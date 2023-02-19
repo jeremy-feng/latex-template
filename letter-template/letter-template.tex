@@ -1,0 +1,62 @@
+\documentclass[a4paper]{letter}
+\usepackage{geometry}
+\geometry{a4paper,left=4cm,right=4cm,top=3cm,bottom=3cm}
+
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tgschola}
+\usepackage[UTF8]{ctex}
+\usepackage{tcolorbox}
+
+\pagestyle{empty}
+\setlength{\parskip}{0.5em}
+\setlength\parindent{24pt}
+\usepackage{enumitem}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=0\parskip,topsep=0pt}
+\setCJKmainfont{simkai.ttf}
+% \setCJKmainfont{simkai.ttf}[BoldFont=HuaWenKaiTiBold.ttf]
+\setmainfont{Arial}
+
+\newcommand{\lettertitle}{信件标题}
+\newcommand{\yourphone}{+86 189-5921-7045}
+\newcommand{\youraddress}{上海市杨浦区国顺路 670 号}
+\newcommand{\youremail}{22210690089@m.fudan.edu.cn}
+\newcommand{\yourweb}{https://fengchao.pro/}
+
+
+\usepackage[colorlinks = true,
+urlcolor = blue, %链接的颜色
+pdftitle = {冯超}, %PDF文件的标题
+pdfauthor = {冯超} %PDF文件的作者
+]{hyperref}
+
+\begin{document}
+
+\begin{flushleft}
+    \yourphone\\
+    \youraddress
+\end{flushleft}
+
+\vspace{-46pt}
+
+\begin{flushright}
+    \href{mailto:\youremail}{\youremail}\\
+    \href{\yourweb}{\yourweb}
+\end{flushright}
+
+\begin{center}
+    \LARGE\lettertitle
+\end{center}
+
+\bigskip
+
+\par \noindent 亲爱的小明：
+\par 正文。
+\par 谢谢。
+
+\par \begin{flushright}
+    冯超\\
+    \today
+\end{flushright}
+
+\end{document}
